@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - DevHub</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="headerperfil">
+        
+        <a href="feed.html" class="voltar">Voltar ao Feed</a>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#amigos">Sugestões de Amigos</a></li>
+            <li><a href="#mensagens">Mensagens</a></li>
+            <li><a href="#configuracoes">Configurações</a></li>
+        </ul>
+    </nav>
+
+    <div id="perfil-info" class="perfil-container">
+        <img src="loiraperfil.jpg" class="fotoperfil" alt="Foto do Perfil" class="perfil-photo">
+
+        <h2>Nome do Usuário</h2>
+        <p>Trabalhando atualmente em: <strong>Projeto Atual</strong></p>
+        <p>Bio: Desenvolvedor apaixonado por tecnologia.</p>
+
+        <!-- O botão "Adicionar como Amigo" será controlado pelo script -->
+        <button id="addFriend" style="display:none;">Adicionar como Amigo</button><br>
+
+        <h3>Seguidores: 120 | Seguindo: 150</h3>
+        <p>Projetos Anteriores:</p>
+        <ul id="project-list">
+            <!-- Projetos serão carregados aqui -->
+        </ul>
+        <br>
+        <h3>Publicações</h3>
+        <div id="user-posts">
+            Ainda não fez nenhuma publicação.<br><br>
+            <!-- Postagens do usuário serão carregadas aqui -->
+        </div>
+
+        <button id="editPerfil" onclick="window.location.href='editar_perfil.html'">Editar Perfil</button>
+    </div>
+
+    <script>
+        // Simulação: Definir se este é o perfil do próprio usuário ou de outra pessoa
+        var isOwnProfile = true; // Mude para `false` para testar visualizando outro perfil
+
+        // Mostrar ou ocultar o botão "Adicionar como Amigo" com base em `isOwnProfile`
+        window.onload = function() {
+            if (!isOwnProfile) {
+                document.getElementById('addFriend').style.display = 'block';
+            }
+        }
+    </script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+

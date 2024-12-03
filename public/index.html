@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <img src="../fotos/DevHub2.png" alt="Logo da Empresa" class="logo"> <!-- Logo da empresa -->
+                <button id="toggleForm">Registrar</button>
+            </div>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+                <a href="#" id="forgotPassword">Esqueci minha senha</a>
+            </form>
+            <form id="registerForm" style="display:none;">
+                <input type="email" id="registerEmail" placeholder="Email" required>
+                <input type="password" id="registerPassword" placeholder="Senha" required>
+                <button type="submit">Registrar</button>
+            </form>
+            <div class="social-login">
+                <button id="googleLogin">Login com Google</button>
+                <button id="facebookLogin">Login com Facebook</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

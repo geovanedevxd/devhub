@@ -1,0 +1,312 @@
+body {
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #e0f7fa; /* Azul claro de fundo */
+}
+
+.headerperfil {
+  background: linear-gradient(to bottom, #007BFF, #ffffff); /* Gradiente de azul para branco */
+  padding: 20px;
+}
+
+.voltar {
+  background-color: #ccc; /* Cor de fundo camuflada */
+  color: rgba(255, 255, 255, 0.5); /* Torna o texto invisível */
+  border: none; /* Sem borda */
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Adiciona uma transição suave para a cor do texto */
+  text-decoration: none;
+}
+
+.voltar:hover {
+  color: rgba(255, 255, 255, 0.5); /* Torna o texto visível ao passar o mouse */
+  background-color: #007BFF; /* Cor de fundo ao passar o mouse */
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.form-header button {
+  background: #007bb5;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #b0bec5; /* Azul acinzentado */
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #007bb5;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #005f8d;
+}
+
+a {
+  color: #007bb5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.social-login {
+  margin-top: 20px;
+}
+
+.social-login button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#googleLogin {
+  background: #db4437; /* Vermelho do Google */
+}
+
+#facebookLogin {
+  background: #4267b2; /* Azul do Facebook */
+}
+
+/* Estilos para a foto de perfil */
+.fotoperfil {
+  max-width: 150px;
+  max-height: 150px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Torna a foto de perfil redonda */
+  margin-top: -75px; /* Move a foto de perfil para cima, sobrepondo a capa */
+  border: 3px solid white; /* Adiciona uma borda branca ao redor da foto de perfil */
+}
+
+/* Post */
+.post {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.post-image {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.post-description {
+  margin: 10px 0;
+}
+
+/* Botões de ação */
+.like-btn, .share-btn, .view-perfil-btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.like-btn:hover, .share-btn:hover, .view-perfil-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Lista de Projetos no Perfil */
+.project-item {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+/* Estilos para a página de mensagens */
+#messages {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.message p {
+  margin: 5px 0;
+}
+
+.send-message-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.send-message-box input {
+  flex: 1;
+  padding: 5px;
+}
+
+.send-message-box button {
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.send-message-box button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para a página de notificações */
+#notifications {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.notification-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+/* Estilos para a página de perfil */
+#perfil-info {
+  position: relative;
+  top: -30px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#addFriend {
+  width: 40%;
+}
+
+.botaoeditperfil {
+  max-width: 30%;
+}
+
+.perfil-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  bottom: -150px;
+}
+
+.perfil-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #007BFF;
+}
+
+.perfil-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.perfil-projects {
+  margin-top: 20px;
+}
+
+.project-item {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+/* Estilos para o feed principal */
+#feed {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.post p {
+  margin: 10px 0;
+}
+
+/* Estilos para a tela de Login e Registro */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
